@@ -3,8 +3,6 @@
 #include <sys/types.h>
 #include <time.h>
 
-#define BILLION  1000000000L;
-
 /*
 C version based on Fortran example in "Introduction to High Performance
 Computing for Scientists and Engineers" by Georg Hager and Gerhard Wellein, CRC
@@ -60,7 +58,7 @@ main(int argc, char **argv) {
 
     accum = ( stop.tv_sec - start.tv_sec )
           + ( stop.tv_nsec - start.tv_nsec )
-            / (double) BILLION;
+            / (double) 1e9;
     mflops = r * n * 2.0 / accum / 1e6;
 
     printf("Elapsed time (seconds): %f\n", accum);
