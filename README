@@ -1,0 +1,6 @@
+CPU Benchmark
+=============
+
+Run thus:
+
+./cpubench > results/results-$(date -d today +"%Y%m%d%H%M").txt

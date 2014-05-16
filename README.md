@@ -1,4 +1,0 @@
-cpubench
-========
-
-CPU Benchmark 
