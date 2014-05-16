@@ -1,0 +1,17 @@
+#!/bin/bash
+# @ job_name = cpubench
+# @ comment = CPU Benchmark (translated from Fortran from Intro to HPC for Scientists and Engineers)
+# @ class = short
+# @ group = its
+# @ node_usage = not_shared
+# @ initialdir = /home/linstead/cpubench
+# @ output = $(job_name)_$(cluster)_$(stepid).out
+# @ error  = $(job_name)_$(cluster)_$(stepid).err
+# @ notification = complete
+# @ notify_user = $(user)
+# @ job_type = serial 
+# @ Wall_clock_limit = 1:00:00
+# @ queue
+
+cpubench > results/results-iplex-$(date -d today +"%Y%m%d%H%M").txt
+
