@@ -10,8 +10,8 @@
 # @ notification = complete
 # @ notify_user = $(user)
 # @ job_type = serial 
-# @ Wall_clock_limit = 1:00:00
+# @ Wall_clock_limit = 3:00:00
 # @ queue
 
-cpubench > results/results-iplex-$(date -d today +"%Y%m%d%H%M").txt
+run.sh > results/results-iplex-$(date -d today +"%Y%m%d%H%M").txt
 
