@@ -1,4 +1,4 @@
-CC=icc
+CC=gcc
 
 # Compiler flags
 OPT=-O3
