@@ -16,6 +16,7 @@ program triad
   integer(kind=8) :: R
 
   read *,N
+!  N = 10000
 
   allocate(A(1:N),B(1:N),C(1:N),D(1:N))
 
@@ -87,6 +88,7 @@ subroutine do_triad(A,B,C,D,N,R,WT)
   call get_walltime(E)
   
   WT = E-S
+!  print *, "Elapsed: ",WT
 
 end subroutine do_triad
 
